@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public class ControlaAnimacion {
 	
-	public static Animation getAnimation(String resource, int animLength) { //se debe indicar la ruta de la imágen y la cant. de frames
+	public static Animation getAnimation(String resource, int animLength) { //se debe indicar la ruta de la imagen y la cant. de frames
 		Texture texture = new Texture(Gdx.files.internal(resource));
 		
 		TextureRegion [][] temporal = TextureRegion.split(texture, texture.getWidth()/animLength,texture.getHeight());
