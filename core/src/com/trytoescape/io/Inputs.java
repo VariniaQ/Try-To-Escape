@@ -3,27 +3,11 @@ package com.trytoescape.io;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
-
-import com.utilities.Config;
-
-//import screens.MenuScreen;
-
+//TODO usar esta clase
 public class Inputs implements InputProcessor{
 	private  boolean down = false, up = false;
-//	private boolean down = false, up = false;
 	private int mouseX = 0, mouseY = 0;
-//	
-//	public boolean isEnter() {
-//		return enter;
-//	}
-//	
-//	private boolean enter = false;
-//	
-//	MenuScreen app;
-	
-//	public Inputs(MenuScreen app) {
-//		this.app = app;
-//	}
+
 	
 	public boolean isDown() {
 		return down;
@@ -40,12 +24,12 @@ public class Inputs implements InputProcessor{
 		} else if(keycode == Keys.UP) {
 			up = true;
 		}
-		return false;
+		return down;
 	}
 
 	@Override
 	public boolean keyUp(int keycode) {
-		return false;
+		return up;
 	}
 
 	@Override
@@ -55,7 +39,6 @@ public class Inputs implements InputProcessor{
 
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-		
 		return false;
 	}
 
@@ -74,7 +57,7 @@ public class Inputs implements InputProcessor{
 	@Override
 	public boolean mouseMoved(int screenX, int screenY) {
 		mouseX = screenX;
-		mouseY = Gdx.graphics.getHeight()-screenY; //alter Y values (y down = 0) because Libgdx take 0 up
+		mouseY = Gdx.graphics.getHeight()-screenY; //alter Y values (y down = 0) because Libgdx take 0 like up
 		return false;
 	}
 

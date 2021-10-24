@@ -1,15 +1,15 @@
 package com.utilities;
 
-public class Resources {
-	// IMAGES /////////////////////////////////////////
-	public static final String LOGO = "images/Logo.png";
-	public static final String BACKGROUND = "images/placeholder_background.png"; // change to a real menu background
-
-	// FONTS /////////////////////////////////////////
-	public static final String TITLEFONT = "fonts/youmurdererbb_reg.ttf";
-	public static final String BUTTONFONT = "fonts/aliens_among.ttf";
-
-	// CHARACTERS
-	public static final String REGIONTEST = "images/characterSprites/regionTest.png";
-	public static final String IDLETEST = "images/characterSprites/idleTest.png";
+public final class Resources {
+	//characters
+	public static final String PJ = "characters/character.png";
+	public static final String GIRL = "characters/Walk.png";
+	
+	//backgrounds
+	public static final String INTROWALLPAPER = "backgrounds/background.png";
+	public static final String INTROWALLPAPER2 = "backgrounds/background-2.png";
+	
+	//sounds
+	public static final String DOOR = "sounds/door_open.mp3";
+	public static final String OPENING = "sounds/opening.mp3";
 }
