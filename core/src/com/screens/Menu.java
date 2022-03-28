@@ -34,7 +34,7 @@ public class Menu extends AbstractScreen{
 		stage.addActor(table);
 		
 		Label title = new Label("Try to escape", skin);
-		//it can be better making a for.
+
 		TextButton play = new TextButton(MenuOptions.PLAY.getName(), skin);
 		TextButton exit = new TextButton(MenuOptions.EXIT.getName(), skin);
 		
